@@ -8,3 +8,69 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+.logo {
+  width: 190px; 
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 28px 0;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+header .topbar {
+  display: flex;
+  align-items: center;
+}
+
+header .topbar .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .topbar nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header .topbar nav ul li, 
+header .logo {
+  padding: 0 25px;
+}
+
+header .topbar nav ul li a {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header .topbar nav ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+header .topbar nav ul li button {
+  background-color: #0061ff;
+  color: white;
+  padding: 8px 22px;
+  font-size: 1.03em;
+  border: 0;
+  cursor: pointer;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  background-color: #b4d0e7;
+  margin-top: 91px;
+  height: 1000px;
+}

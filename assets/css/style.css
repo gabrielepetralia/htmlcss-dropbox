@@ -205,7 +205,7 @@ main .plans label {
   margin-bottom: 44px;
 }
 
-main .plans .plan-col-container {
+main .plans .plan-cols-container {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -317,6 +317,7 @@ main .plans .plan-row .plan-content span {
 main .partner {
   display: flex;
   margin-top: 170px;
+  margin-bottom: 114px;
 }
 
 main .partner .partner-left {
@@ -334,6 +335,30 @@ main .partner .partner-right p {
   margin: 28px 0;
 }
 
+/* FEATURES SECTION */
+
+main .features .feature-cards-container  {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 57px;
+}
+
+main .features .feature-card {
+  width: 30%;
+  min-width: 245px;
+  margin-bottom: 85px;
+}
+
+main .features .feature-card-txt p {
+  margin: 28px 0;
+}
+
+main .features .feature-card-txt p a {
+  color: black;
+  text-decoration: underline;
+}
 
 /* METTERE ANCORA ALLA FRECCIA IN GIU */
+/* PROVARE A CENTRALIZZARE I FLEX */
 /* RIVEDERE COMPORTAMENTO IMG JUMBOTRON */

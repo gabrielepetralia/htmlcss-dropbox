@@ -70,6 +70,10 @@ ul {
   padding: 12px 26px;
 }
 
+.btn-border {
+  border: 1px solid black;
+}
+
 .btn-blue {
   background-color: #0061ff;
   color: white;
@@ -189,42 +193,43 @@ main {
   height: 500px;
 }
 
-main section:first-child h2 {
+/* PLANS SECTION */
+main .plans:first-child h2 {
   margin-top: 222px;
   margin-bottom: 66px;
 }
 
-main section label {
+main .plans label {
   font-size: 1.2em;
   margin-right: 22px;
   margin-bottom: 44px;
 }
 
-main section .plan-col-container {
+main .plans .plan-col-container {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
-main section .plan-col {
+main .plans .plan-col {
   width: 30%;
   min-width: 245px;
   min-height: 1200px;
   border: 1px solid lightgray;
 }
 
-main section .plan-header {
+main .plans .plan-header {
   text-align: center;
   font-size: 1.2em;
   border-bottom: 1px solid lightgray;
   padding: 11px;
 }
 
-main section .plan-content {
+main .plans .plan-content {
   padding: 35px;
 }
 
-main section .plan-content .price {
+main .plans .plan-content .price {
   display: block;
   font-size: 1.12em;
   font-weight: bold;
@@ -232,81 +237,103 @@ main section .plan-content .price {
   margin-bottom: 12px;
 }
 
-main section .plan-content .payment {
+main .plans .plan-content .payment {
   font-size: 0.97em;
   color: gray;
 }
 
-main section .plan-content ul {
+main .plans .plan-content ul {
   margin: 56px 0;
 }
 
-main section .plan-content ul li {
+main .plans .plan-content ul li {
   display: flex;
   align-items: baseline;
   font-size: 0.97em;
   margin-bottom: 28px;
 }
 
-main section .plan-content ul li i {
+main .plans .plan-content ul li i {
   margin-right: 5px;
 }
 
-main section .plan-content button {
+main .plans .plan-content button {
   width: 100%;
 }
 
-main section .plan-content .purchase {
+main .plans .plan-content .purchase {
   display: block;
   font-size: 0.97em;
   margin: 33px 0;
 }
 
-main section .plan-content .purchase a {
+main .plans .plan-content .purchase a {
   color: #00a2ff;
   text-decoration: underline;
 }
 
-main section .plan-content .segment {
+main .plans .plan-content .segment {
   width: 57px;
   height: 46px;
   border-top: 1px solid lightgray;
 }
 
-main section .plan-content ul:last-of-type {
+main .plans .plan-content ul:last-of-type {
   margin: 29px 0;
 }
 
-main section .plan-content ul:last-of-type li i {
+main .plans .plan-content ul:last-of-type li i {
   color: #00a2ff;
 }
 
-main section .plan-row {
+main .plans .plan-row {
   width: 100%;
   border: 1px solid lightgray;
   margin-top: 59px;
 }
 
-main section .plan-row .plan-content {
+main .plans .plan-row .plan-content {
   display: flex;
 }
 
-main section .plan-row .plan-content .plan-row-left {
+main .plans .plan-row .plan-content .plan-row-left {
   width: 70%;
 }
 
-main section .plan-row .plan-content .plan-row-right {
+main .plans .plan-row .plan-content .plan-row-right {
   width: 30%;
 }
 
-main section .plan-row .plan-content h4 {
+main .plans .plan-row .plan-content h4 {
   margin-top: 15px;
   margin-bottom: 35px;
 }
 
-main section .plan-row .plan-content span {
+main .plans .plan-row .plan-content span {
   font-size: 0.97em;
 }
+
+/* PARTNER SECTION */
+main .partner {
+  display: flex;
+  margin-top: 170px;
+}
+
+main .partner .partner-left {
+  width: 55%;
+}
+
+main .partner .partner-right {
+  width: 45%;
+  padding-top: 46px;
+  padding-left: 57px;
+}
+
+main .partner .partner-right p {
+  line-height: 1.8em;
+  margin: 28px 0;
+}
+
 
 /* METTERE ANCORA ALLA FRECCIA IN GIU */
 /* RIVEDERE COMPORTAMENTO IMG JUMBOTRON */

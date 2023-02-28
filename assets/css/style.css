@@ -10,8 +10,20 @@ body {
   font-weight: 600;
 }
 
-.logo {
-  width: 190px; 
+h1 {
+  font-size: 5.4em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.15em;
 }
 
 img {
@@ -32,20 +44,8 @@ ul {
   list-style: none;
 }
 
-h1 {
-  font-size: 5.4em;
-}
-
-h2 {
-  font-size: 2.8em;
-}
-
-h3 {
-  font-size: 1.8em;
-}
-
-h4 {
-  font-size: 1.15em;
+.logo {
+  width: 190px;
 }
 
 .container {
@@ -62,7 +62,7 @@ h4 {
 
 .btn-small {
   font-size: 1.02em;
-  padding: 8px 22px;
+  padding: 9px 21px;
 }
 
 .btn-big {
@@ -108,7 +108,6 @@ header .topbar .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -201,30 +200,31 @@ main section label {
   margin-bottom: 44px;
 }
 
-main section .plan-container {
+main section .plan-col-container {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
-main section .plan-container .plan-col {
+main section .plan-col {
   width: 30%;
-  height: 1200px;
+  min-width: 245px;
+  min-height: 1200px;
   border: 1px solid lightgray;
 }
 
-main section .plan-container .plan-col .plan-col-header {
+main section .plan-header {
   text-align: center;
   font-size: 1.2em;
   border-bottom: 1px solid lightgray;
   padding: 11px;
 }
 
-main section .plan-container .plan-col .plan-col-content {
+main section .plan-content {
   padding: 35px;
 }
 
-main section .plan-container .plan-col .plan-col-content .price {
+main section .plan-content .price {
   display: block;
   font-size: 1.12em;
   font-weight: bold;
@@ -232,53 +232,81 @@ main section .plan-container .plan-col .plan-col-content .price {
   margin-bottom: 12px;
 }
 
-main section .plan-container .plan-col .plan-col-content .payment {
+main section .plan-content .payment {
   font-size: 0.97em;
   color: gray;
 }
 
-main section .plan-container .plan-col .plan-col-content ul {
+main section .plan-content ul {
   margin: 56px 0;
 }
 
-main section .plan-container .plan-col .plan-col-content ul li {
+main section .plan-content ul li {
   display: flex;
   align-items: baseline;
   font-size: 0.97em;
   margin-bottom: 28px;
 }
 
-main section .plan-container .plan-col .plan-col-content ul li i {
+main section .plan-content ul li i {
   margin-right: 5px;
 }
 
-main section .plan-container .plan-col .plan-col-content button {
+main section .plan-content button {
   width: 100%;
 }
 
-main section .plan-container .plan-col .plan-col-content .purchase {
+main section .plan-content .purchase {
   display: block;
   font-size: 0.97em;
   margin: 33px 0;
 }
 
-main section .plan-container .plan-col .plan-col-content .purchase a {
+main section .plan-content .purchase a {
   color: #00a2ff;
   text-decoration: underline;
 }
 
-main section .plan-container .plan-col .plan-col-content .segment {
+main section .plan-content .segment {
   width: 57px;
   height: 46px;
   border-top: 1px solid lightgray;
 }
 
-main section .plan-container .plan-col .plan-col-content ul:last-of-type {
+main section .plan-content ul:last-of-type {
   margin: 29px 0;
 }
 
-main section .plan-container .plan-col .plan-col-content ul:last-of-type li i {
+main section .plan-content ul:last-of-type li i {
   color: #00a2ff;
 }
 
+main section .plan-row {
+  width: 100%;
+  border: 1px solid lightgray;
+  margin-top: 59px;
+}
+
+main section .plan-row .plan-content {
+  display: flex;
+}
+
+main section .plan-row .plan-content .plan-row-left {
+  width: 70%;
+}
+
+main section .plan-row .plan-content .plan-row-right {
+  width: 30%;
+}
+
+main section .plan-row .plan-content h4 {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+main section .plan-row .plan-content span {
+  font-size: 0.97em;
+}
+
 /* METTERE ANCORA ALLA FRECCIA IN GIU */
+/* RIVEDERE COMPORTAMENTO IMG JUMBOTRON */

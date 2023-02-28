@@ -28,6 +28,32 @@ p {
   margin-bottom: 35px;
 }
 
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 5.4em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.15em;
+}
+
+.container {
+  width: 90%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 /* BUTTONS */
 .btn {
   border: 0;
@@ -89,7 +115,6 @@ header .topbar .menu {
 header .topbar .menu nav ul {
   display: flex;
   align-items: center;
-  list-style: none;
 }
 
 header .topbar .menu nav ul li, 
@@ -123,39 +148,38 @@ header .topbar .menu nav ul li a:hover {
 }
 
 .jumbotron .jumbo-container h1 {
-  font-size: 5.5em;
   padding-top: 90px;
 }
 
-.jumbotron .jumbo-content {
+.jumbotron .jumbo-container .jumbo-content {
   display: flex;
 }
 
-.jumbotron .jumbo-content .col-left {
+.jumbotron .jumbo-container .jumbo-content .col-left {
   width: 35%;
   padding-top: 50px;
   padding-right: 72px;
 }
 
-.jumbotron .jumbo-content .col-left span {
+.jumbotron .jumbo-container .jumbo-content .col-left span {
   display: block;
   font-size: 0.97em;
   margin-top: 12px;
   margin-bottom: 44px;
 }
 
-.jumbotron .jumbo-content .col-left .arrow-down {
+.jumbotron .jumbo-container .jumbo-content .col-left .arrow-down {
   font-size: 3em;
   color: black;
   margin-bottom: 60px;
 }
 
-.jumbotron .jumbo-content .col-right {
+.jumbotron .jumbo-container .jumbo-content .col-right {
   position: relative;
   width: 65%;
 }
 
-.jumbotron .jumbo-content .col-right img {
+.jumbotron .jumbo-container .jumbo-content .col-right img {
   position: absolute;
   top: 50px; 
 }
@@ -165,3 +189,96 @@ main {
   background-color: white;
   height: 500px;
 }
+
+main section:first-child h2 {
+  margin-top: 222px;
+  margin-bottom: 66px;
+}
+
+main section label {
+  font-size: 1.2em;
+  margin-right: 22px;
+  margin-bottom: 44px;
+}
+
+main section .plan-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+main section .plan-container .plan-col {
+  width: 30%;
+  height: 1200px;
+  border: 1px solid lightgray;
+}
+
+main section .plan-container .plan-col .plan-col-header {
+  text-align: center;
+  font-size: 1.2em;
+  border-bottom: 1px solid lightgray;
+  padding: 11px;
+}
+
+main section .plan-container .plan-col .plan-col-content {
+  padding: 35px;
+}
+
+main section .plan-container .plan-col .plan-col-content .price {
+  display: block;
+  font-size: 1.12em;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+main section .plan-container .plan-col .plan-col-content .payment {
+  font-size: 0.97em;
+  color: gray;
+}
+
+main section .plan-container .plan-col .plan-col-content ul {
+  margin: 56px 0;
+}
+
+main section .plan-container .plan-col .plan-col-content ul li {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.97em;
+  margin-bottom: 28px;
+}
+
+main section .plan-container .plan-col .plan-col-content ul li i {
+  margin-right: 5px;
+}
+
+main section .plan-container .plan-col .plan-col-content button {
+  width: 100%;
+}
+
+main section .plan-container .plan-col .plan-col-content .purchase {
+  display: block;
+  font-size: 0.97em;
+  margin: 33px 0;
+}
+
+main section .plan-container .plan-col .plan-col-content .purchase a {
+  color: #00a2ff;
+  text-decoration: underline;
+}
+
+main section .plan-container .plan-col .plan-col-content .segment {
+  width: 57px;
+  height: 46px;
+  border-top: 1px solid lightgray;
+}
+
+main section .plan-container .plan-col .plan-col-content ul:last-of-type {
+  margin: 29px 0;
+}
+
+main section .plan-container .plan-col .plan-col-content ul:last-of-type li i {
+  color: #00a2ff;
+}
+
+/* METTERE ANCORA ALLA FRECCIA IN GIU */

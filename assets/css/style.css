@@ -30,14 +30,8 @@ img {
   width: 100%;
 }
 
-a {
-  font-size: 1.1em;
-  text-decoration: none;
-}
-
 p {
   font-size: 1.1em;
-  margin-bottom: 35px;
 }
 
 ul {
@@ -52,6 +46,11 @@ ul {
   width: 90%;
   max-width: 1220px;
   margin: 0 auto;
+}
+
+.divider {
+  width: 57px;
+  border-top: 1px solid lightgray;
 }
 
 /* BUTTONS */
@@ -129,6 +128,8 @@ header .topbar .menu nav ul li a {
   display: inline-block;
   height: 90px;
   line-height: 90px;
+  font-size: 1.1em;
+  text-decoration: none;
   color: black;
   white-space: nowrap;
 }
@@ -164,6 +165,10 @@ header .topbar .menu nav ul li a:hover {
   padding-right: 72px;
 }
 
+.jumbotron .jumbo-container .jumbo-content .col-left p {
+  margin-bottom: 35px;
+}
+
 .jumbotron .jumbo-container .jumbo-content .col-left span {
   display: block;
   font-size: 0.97em;
@@ -190,7 +195,6 @@ header .topbar .menu nav ul li a:hover {
 /* MAIN */
 main {
   background-color: white;
-  height: 500px;
 }
 
 /* PLANS SECTION */
@@ -264,7 +268,7 @@ main .plans .plan-content button {
 main .plans .plan-content .purchase {
   display: block;
   font-size: 0.97em;
-  margin: 33px 0;
+  margin-top: 33px;
 }
 
 main .plans .plan-content .purchase a {
@@ -272,10 +276,9 @@ main .plans .plan-content .purchase a {
   text-decoration: underline;
 }
 
-main .plans .plan-content .segment {
-  width: 57px;
-  height: 46px;
-  border-top: 1px solid lightgray;
+main .plans .plan-content .divider {
+  margin-top: 33px;
+  margin-bottom: 45px;
 }
 
 main .plans .plan-content ul:last-of-type {
@@ -336,7 +339,6 @@ main .partner .partner-right p {
 }
 
 /* FEATURES SECTION */
-
 main .features .feature-cards-container  {
   display: flex;
   justify-content: space-between;
@@ -345,7 +347,7 @@ main .features .feature-cards-container  {
 }
 
 main .features .feature-card {
-  width: 30%;
+  width: 29%;
   min-width: 245px;
   margin-bottom: 85px;
 }
@@ -358,6 +360,114 @@ main .features .feature-card-txt p a {
   color: black;
   text-decoration: underline;
 }
+
+/* TEAMS SECTION */
+main .teams .container {
+  padding-top: 112px;
+  padding-bottom: 58px;
+}
+
+main .teams .container a {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #00a2ff;
+  text-decoration: underline;
+  margin-top: 36px;
+}
+
+main .teams .team-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .teams .team-left , main .teams .team-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 30vw;
+}
+
+main .teams .team-center {
+  background-color: #F5F5F5;
+  width: 40vw;
+  height: 30vw;
+  overflow-y: auto;
+  padding: 56px;
+}
+
+main .teams .team-center .team-header img{
+  width: 164px;
+}
+
+main .teams .team-center .divider {
+  margin-top: 34px;
+}
+
+main .teams .team-center .team-txt p {
+  margin: 58px 0;
+}
+
+main .teams .team-center .team-txt .credits {
+  font-size: 0.97em;
+}
+
+main .teams .team-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 15vw;
+  padding: 66px;
+}
+
+main .teams .team-logo:hover {
+  border: 0.5vw solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+main .teams .team-logo.active {
+  border: 0.5vw solid rgba(255, 255, 255, 0.5);
+}
+
+main .teams .team-logo img {
+  filter: invert(1);
+  min-width: 80px;
+}
+
+/* TEAM LOGO COLORS */
+main .teams .team-logo.team-designit {
+  background-color: #A2D39B;
+}
+
+main .teams .team-logo.team-asu {
+  background-color: #61082C;
+}
+
+main .teams .team-logo.team-uf {
+  background-color: #1D93CE;
+}
+
+main .teams .team-logo.team-topps {
+  background-color: #F91C1D;
+}
+
+main .teams .team-logo.team-wbf {
+  background-color: #D5021F;
+}
+
+main .teams .team-logo.team-hc {
+  background-color: #B4D0E7;
+}
+
+main .teams .team-logo.team-lp {
+  background-color: #0D2481;
+}
+
+main .teams .team-logo.team-cco {
+  background-color: #FED830;
+}
+
+/* FREE TRIAL SECTION */
 
 /* METTERE ANCORA ALLA FRECCIA IN GIU */
 /* PROVARE A CENTRALIZZARE I FLEX */

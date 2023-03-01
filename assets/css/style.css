@@ -19,10 +19,14 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 2.4em;
 }
 
 h4 {
+  font-size: 1.8em;
+}
+
+h5 {
   font-size: 1.15em;
 }
 
@@ -91,6 +95,7 @@ ul {
   background-color: #f5f5f5;
 }
 
+
 /* HEADER */
 header {
   position: fixed;
@@ -137,6 +142,7 @@ header .topbar .menu nav ul li a {
 header .topbar .menu nav ul li a:hover {
   border-bottom: 2px solid black;
 }
+
 
 /* JUMBOTRON */
 .jumbotron {
@@ -191,6 +197,7 @@ header .topbar .menu nav ul li a:hover {
   position: absolute;
   top: 50px; 
 }
+
 
 /* MAIN */
 main {
@@ -273,7 +280,6 @@ main .plans .plan-content .purchase {
 
 main .plans .plan-content .purchase a {
   color: #00a2ff;
-  text-decoration: underline;
 }
 
 main .plans .plan-content .divider {
@@ -307,7 +313,7 @@ main .plans .plan-row .plan-content .plan-row-right {
   width: 30%;
 }
 
-main .plans .plan-row .plan-content h4 {
+main .plans .plan-row .plan-content h5 {
   margin-top: 15px;
   margin-bottom: 35px;
 }
@@ -358,7 +364,6 @@ main .features .feature-card-txt p {
 
 main .features .feature-card-txt p a {
   color: black;
-  text-decoration: underline;
 }
 
 /* TEAMS SECTION */
@@ -371,7 +376,6 @@ main .teams .container a {
   display: inline-block;
   font-size: 1.1em;
   color: #00a2ff;
-  text-decoration: underline;
   margin-top: 36px;
 }
 
@@ -468,7 +472,89 @@ main .teams .team-logo.team-cco {
 }
 
 /* FREE TRIAL SECTION */
+main .free-trial {
+  background-color: #B4D0E7;
+}
 
+main .free-trial .container {
+  display: flex;
+  padding: 140px 0;
+}
+
+main .free-trial .container .free-trial-left {
+  color: #61082C;
+  width: 70%;
+}
+
+main .free-trial .container .free-trial-right {
+  width: 30%;
+}
+
+main .free-trial .container .free-trial-right button {
+  width: 100%;
+} 
+
+/* FAQ SECTION */
+main .faq {
+  padding: 138px 0;
+}
+
+main .faq div:first-of-type:not(.question) {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 54px;
+}
+
+main .faq .faq-row {
+  border-bottom: 1px solid lightgray;
+  padding: 38px 0;
+}
+
+main .faq .faq-row .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 44px;
+} 
+
+main .faq .faq-row .question .chevron:after{
+  content: '\f078';
+  font-family: FontAwesome;
+  font-size: 16px;
+}
+
+main .faq .faq-row .answer {
+  height: 0;
+  opacity: 0;
+  padding-right: 260px;
+  transition: all 0s;
+}
+
+main .faq .faq-row .answer p {
+  font-size: 0.97em;
+  color: gray;
+}
+
+main .faq .faq-row .answer p a {
+  color: gray;
+}
+
+main .faq .faq-row:hover .answer {
+  height: auto;
+  opacity: 1;
+  margin-top: 24px;
+  transition: all 1s;
+}
+
+main .faq .faq-row:hover .question .chevron:after {
+  content: '\f077';
+}
+
+
+/* FOOTER */
+footer {
+  background-color: black;
+  height: 450px;
+}
 /* METTERE ANCORA ALLA FRECCIA IN GIU */
 /* PROVARE A CENTRALIZZARE I FLEX */
 /* RIVEDERE COMPORTAMENTO IMG JUMBOTRON */

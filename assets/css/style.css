@@ -52,7 +52,7 @@ ul {
 }
 
 .logo {
-  width: 190px;
+  width: 192px;
 }
 
 .container {
@@ -79,7 +79,7 @@ ul {
 
 .btn-small {
   font-size: 1.02em;
-  padding: 9px 21px;
+  padding: 9px 22px;
 }
 
 .btn-big {
@@ -133,7 +133,7 @@ header .topbar .menu {
   width: 100%;
 }
 
-header .topbar .menu nav ul {
+header .topbar .menu nav > ul {
   display: flex;
   align-items: center;
 }
@@ -143,7 +143,7 @@ header .logo {
   padding: 0 25px;
 }
 
-header .topbar .menu nav ul li a {
+header .topbar .menu nav > ul > li > a {
   display: inline-block;
   height: 90px;
   line-height: 90px;
@@ -153,8 +153,53 @@ header .topbar .menu nav ul li a {
   white-space: nowrap;
 }
 
-header .topbar .menu nav ul li a:hover {
+header .topbar .menu nav > ul > li:hover > a {
   border-bottom: 2px solid black;
+}
+
+/* DROPDOWN MENU */
+header .topbar .menu nav .dropdown {
+  position: relative;
+  overflow: hidden;
+}
+
+header .topbar .menu nav .dropdown .dropdown-menu {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: auto;
+  opacity: 0;
+  background-color: white;
+  padding: 15px 0;
+  transition: all 0s;
+}
+
+header .topbar .menu nav .dropdown .dropdown-menu li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header .topbar .menu nav .dropdown .dropdown-menu li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+header .topbar .menu nav .dropdown .dropdown-menu li a {
+  font-size: 0.97em;
+  color: black;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+header .topbar .menu nav .dropdown:hover .dropdown-menu {
+  top: 90px;
+  opacity: 1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+header .topbar .menu nav .dropdown:hover {
+  overflow: visible;
 }
 
 
@@ -282,7 +327,7 @@ main .plans .plan-content ul li i {
   margin-right: 5px;
 }
 
-main .plans .plan-content button {
+main .plans .plan-content .btn {
   width: 100%;
 }
 
@@ -504,7 +549,7 @@ main .free-trial .container .free-trial-right {
   width: 30%;
 }
 
-main .free-trial .container .free-trial-right button {
+main .free-trial .container .free-trial-right .btn {
   width: 100%;
 } 
 
@@ -625,7 +670,4 @@ footer .footer-container .language span:after {
 
 
 
-/* METTERE ANCORA ALLA FRECCIA IN GIU */
-/* MENU A TENDINA NAV */
 /* MENU A TENDINA LANGUAGE */
-/* PROVARE A CENTRALIZZARE I FLEX */

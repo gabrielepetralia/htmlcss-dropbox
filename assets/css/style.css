@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 11em;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;

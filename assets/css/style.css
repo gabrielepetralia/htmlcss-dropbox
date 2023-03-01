@@ -27,6 +27,10 @@ h4 {
 }
 
 h5 {
+  font-size: 1.5em;
+}
+
+h6 {
   font-size: 1.15em;
 }
 
@@ -52,9 +56,14 @@ ul {
   margin: 0 auto;
 }
 
-.divider {
+.divider-small {
   width: 57px;
   border-top: 1px solid lightgray;
+}
+
+.divider-big {
+  width: 128px;
+  border-top: 1px solid white;
 }
 
 /* BUTTONS */
@@ -282,7 +291,7 @@ main .plans .plan-content .purchase a {
   color: #00a2ff;
 }
 
-main .plans .plan-content .divider {
+main .plans .plan-content .divider-small {
   margin-top: 33px;
   margin-bottom: 45px;
 }
@@ -313,7 +322,7 @@ main .plans .plan-row .plan-content .plan-row-right {
   width: 30%;
 }
 
-main .plans .plan-row .plan-content h5 {
+main .plans .plan-row .plan-content h6 {
   margin-top: 15px;
   margin-bottom: 35px;
 }
@@ -403,7 +412,7 @@ main .teams .team-center .team-header img{
   width: 164px;
 }
 
-main .teams .team-center .divider {
+main .teams .team-center .divider-small {
   margin-top: 34px;
 }
 
@@ -519,12 +528,13 @@ main .faq .faq-row .question {
 main .faq .faq-row .question .chevron:after{
   content: '\f078';
   font-family: FontAwesome;
-  font-size: 16px;
+  font-size: 1.1em;
 }
 
 main .faq .faq-row .answer {
   height: 0;
   opacity: 0;
+  overflow: hidden;
   padding-right: 260px;
   transition: all 0s;
 }
@@ -541,6 +551,7 @@ main .faq .faq-row .answer p a {
 main .faq .faq-row:hover .answer {
   height: auto;
   opacity: 1;
+  overflow: visible;
   margin-top: 24px;
   transition: all 1s;
 }
@@ -553,8 +564,63 @@ main .faq .faq-row:hover .question .chevron:after {
 /* FOOTER */
 footer {
   background-color: black;
-  height: 450px;
+  color: white;
 }
+
+footer .footer-container {
+  width: 90%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+footer .footer-container .footer-col-container {
+  display: flex;
+  padding-top: 110px;
+}
+
+footer .footer-container .footer-col-container .footer-col {
+  width: 20%;
+}
+
+footer .footer-container .footer-col-container .footer-col h5 {
+  margin-bottom: 24px;
+}
+
+footer .footer-container .footer-col-container .footer-col ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-container .footer-col-container .footer-col ul li a {
+  font-size: 0.97em;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-container .footer-col-container .footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-container .divider-big {
+  margin-top: 110px;
+}
+
+footer .footer-container .language {
+  color: gray;
+  padding: 50px 0;
+}
+
+footer .footer-container .language span {
+  font-size: 0.85em;
+}
+
+footer .footer-container .language span:after {
+  content: '\f0d8';
+  font-family: FontAwesome;
+}
+
+
+
 /* METTERE ANCORA ALLA FRECCIA IN GIU */
+/* MENU A TENDINA NAV */
+/* MENU A TENDINA LANGUAGE */
 /* PROVARE A CENTRALIZZARE I FLEX */
-/* RIVEDERE COMPORTAMENTO IMG JUMBOTRON */

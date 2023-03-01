@@ -603,7 +603,7 @@ main .faq .faq-row:hover .answer {
   opacity: 1;
   overflow: visible;
   margin-top: 24px;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 main .faq .faq-row:hover .question .chevron:after {
